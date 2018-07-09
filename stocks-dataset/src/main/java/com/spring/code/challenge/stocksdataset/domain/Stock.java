@@ -20,7 +20,7 @@ public class Stock {
     private int id;
     private String symbol;
     private float price;
-    private int volume;
+    private long volume;
     private Date date;
 
     public Stock(){}
@@ -49,11 +49,11 @@ public class Stock {
         this.price = price;
     }
 
-    public int getVolume() {
+    public long getVolume() {
         return volume;
     }
 
-    public void setVolume(int volume) {
+    public void setVolume(long volume) {
         this.volume = volume;
     }
 
