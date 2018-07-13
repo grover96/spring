@@ -1,0 +1,28 @@
+select * from account;
+insert into account (id, email_address, first_name, last_name) values (1, "rgrover@solstice.com", "Rohan", "Grover");
+insert into account (id, email_address, first_name, last_name) values (2, "kbryant@gmail.com", "Kobe", "Bryant");
+insert into account (id, email_address, first_name, last_name) values (3, "mjordan@yahoo.com", "Michael", "Jordan");
+
+select * from address;
+insert into address (id, apt, city, country, state, street, zip_code, account_id) values (1, "45A", "Chicago", "USA", "IL", "432 Michigan Ave.", "60660", 1);
+insert into address (id, apt, city, country, state, street, zip_code, account_id) values (2, "675", "Deerfield", "USA", "IL", "112 Deerfield Ave.", "60078", 1);
+insert into address (id, apt, city, country, state, street, zip_code, account_id) values (3, "3B", "Des Plaines", "USA", "IL", "970 Hollyberry Ave.", "60016", 2);
+insert into address (id, apt, city, country, state, street, zip_code, account_id) values (4, "1922", "Chicago", "USA", "IL", "644 Wabash Ave.", "60660", 2);
+
+select * from order_line_items;
+insert into order_line_items (id, price, quantity, total_price, product_id, shipment_id) values (1, 25, 2, 50, 1, 1);
+insert into order_line_items (id, price, quantity, total_price, product_id, shipment_id) values (2, 11, 5, 55, 2, 1);
+
+select * from orders;
+insert into orders (id, order_date, order_number, total_price, account_id, order_line_items_id, address_id) values (1, DATE '2017-12-12', 002923, 50, 1, 1,1);
+insert into orders (id, order_date, order_number, total_price, account_id, order_line_items_id, address_id) values (2, DATE '2017-12-12', 002924, 55, 1, 2,1);
+
+select * from product;
+insert into product (id, description, image, name, price) values (1, "board game", "", "Monopoly", 25);
+insert into product (id, description, image, name, price) values (2, "card game", "", "Uno", 11);
+
+select * from shipment;
+insert into shipment (id, delivery_date, shipped_date, account_id, address_id) values (1, DATE '2017-12-16', DATE '2017-12-14', 1, 1, 1);
+insert into shipment (id, delivery_date, shipped_date, account_id, address_id) values (2, DATE '2017-12-16', DATE '2017-12-14', 1, 2, 1);
+
+
