@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.spring.code.challenge.stocksdataset.domain.Stock;
 import com.spring.code.challenge.stocksdataset.service.StockService;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
@@ -21,6 +22,7 @@ public class StockController {
     }
 
     @PostMapping("/load")
+    @ResponseStatus(HttpStatus.CREATED)
     public void load() {
         ObjectMapper mapper = new ObjectMapper();
         try {

@@ -25,6 +25,14 @@ public class Stock {
 
     public Stock(){}
 
+    public Stock(int id, String symbol, float price, long volume, Date date) {
+        this.id = id;
+        this.symbol = symbol;
+        this.price = price;
+        this.volume = volume;
+        this.date = date;
+    }
+
     public int getId() {
         return id;
     }
