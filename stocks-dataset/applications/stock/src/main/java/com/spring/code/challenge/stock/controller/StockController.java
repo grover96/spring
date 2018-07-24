@@ -22,7 +22,6 @@ public class StockController {
     }
 
     @PostMapping
-    @ResponseStatus(HttpStatus.CREATED)
     public void load() {
         ObjectMapper mapper = new ObjectMapper();
         try {

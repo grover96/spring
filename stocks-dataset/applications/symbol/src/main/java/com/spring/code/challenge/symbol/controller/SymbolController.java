@@ -12,7 +12,7 @@ import java.net.URL;
 import java.util.List;
 
 @RestController
-@RequestMapping("/stockSymbols")
+@RequestMapping("/stockSymbols/")
 public class SymbolController {
 
     private static final String CONFIG_FILE = "/stock-symbols.json";
@@ -32,7 +32,7 @@ public class SymbolController {
 //        return symbolService.findById(id);
 //    }
 
-    @GetMapping("/{symbol}")
+    @GetMapping("{symbol}")
     public Symbol findSymbolById(@PathVariable("symbol")String symbol){
         return symbolService.findBySymbol(symbol);
     }

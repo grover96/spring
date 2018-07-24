@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.spring.code.challenge.stock.service.StockServiceUnitTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-07-24T13:41:16" hostname="Rohan-Grovers-MacBook-Pro.local" time="0.013">
+  <properties/>
+  <testcase name="testSaveStocks" classname="com.spring.code.challenge.stock.service.StockServiceUnitTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
